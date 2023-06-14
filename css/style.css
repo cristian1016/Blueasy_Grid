@@ -16,7 +16,7 @@ main {
 header {
     display: grid;
     grid-template-rows: 100px 400px ;
-    background-image: url(images/Fondo.png);
+    background-image: url(/images/Fondo.png);
     background-size: cover;
     background-repeat: no-repeat;
     grid-row: 1/2;
@@ -196,7 +196,6 @@ textarea {
     padding: 5px;
 }
 
-
 /* 
 #links_portfolio a:hover {
     color: rgb(0, 179, 255);
@@ -317,7 +316,7 @@ textarea {
 }
 
 .who_jhon {
-    background-image: url(images/bg_whoIs.png);
+    background-image: url(/images/bg_whoIs.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -399,7 +398,7 @@ textarea {
 }
 
 .contact {
-    background-image: url(images/bg_contact.png);
+    background-image: url(/images/bg_contact.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
