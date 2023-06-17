@@ -1,11 +1,7 @@
-* {
+*{
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-}
-
-body {
-    width: 100%;
 }
 
 main {
@@ -53,19 +49,9 @@ section nav {
     font-size: 11px;
 }
 
-
 header nav div a:hover {
     color: rgb(0, 179, 255);
     border: 2px solid rgb(0, 179, 255);
-}
-
-footer {
-    background-color: rgb(71, 71, 71);
-    display: grid;
-    place-content: center;
-    color: white;
-    grid-template-columns: repeat(8, 1fr);
-    align-items: center;
 }
 
 button {
@@ -87,21 +73,31 @@ input {
 textarea {
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid white;
+    width: 1000px;
+    height: 150px;
 }
 
-.titulo {
+footer {
+    background-color: rgb(71, 71, 71);
+    display: grid;
+    place-content: center;
+    color: white;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.titulo_header {
     display: grid;
     text-align: center;
     gap: 10px;
-    grid-template-rows: 1fr 1fr;
 }
 
-.titulo #titulo_arriba {
+.titulo_header #titulo_arriba {
     display: grid;
     align-items: end;
 }
 
-.titulo h2 {    
+.titulo_header h2 {    
     background-color:rgba(0, 0, 0, 0.338);
     color: white;
 } 
@@ -110,19 +106,14 @@ textarea {
     color: rgb(0, 179, 255);
 }
 
-#link1 a {
+#link_1 a {
     color: rgb(0, 179, 255);
     border: 2px solid rgb(0, 179, 255);
     padding: 5px;
 }
 
-#link2 a,#link3 a, #link4 a, #link5 a{
+#link_2 a,#link_3 a, #link_4 a, #link_5 a{
     padding: 5px;
-}
-
-#portfolio_hr {
-    width: 34px;
-    border: 1px solid rgb(128, 128, 128);
 }
 
 .services {
@@ -175,10 +166,16 @@ textarea {
     grid-template-rows: 90px 640px;
 }
 
+#portfolio_hr {
+    width: 34px;
+    height: 0px;
+    border: 1px solid rgb(128, 128, 128);
+}
+
 #links_portfolio {
     grid-column: 2/3;
-    justify-content: end;
     display: flex;
+    justify-content: end;
     align-items: center;
 }
 
@@ -195,14 +192,6 @@ textarea {
     border: 2px solid rgb(0, 179, 255);
     padding: 5px;
 }
-
-/* 
-#links_portfolio a:hover {
-    color: rgb(0, 179, 255);
-    border: 2px solid rgb(0, 179, 255);
-    padding: 5px;
-
-} */
 
 #header_portfolio {
     display: grid;
@@ -264,12 +253,6 @@ textarea {
     padding: 5px 20px;
 }
 
-#portfolio_hr {
-    width: 34px;
-    height: 0px;
-    border: 1px solid rgb(128, 128, 128);
-}
-
 .twitter {
     background-color: rgb(33, 204, 238);
     display: grid;
@@ -277,7 +260,6 @@ textarea {
     color: white; 
     grid-template-rows: 1fr 1fr;
 }
-
 
 #titulo_twitter {
     display: grid;
@@ -375,7 +357,6 @@ textarea {
     font-size: 40px;
 }
 
-
 #parrafo_testimonials {
     align-items: center;
     display: grid;
@@ -452,7 +433,6 @@ textarea {
     grid-row: 9/10;
 }
 
-
 #links_footer {
     grid-column: 2/4;
     font-size: 11px;
@@ -461,7 +441,6 @@ textarea {
 #links_footer a {
     text-decoration: none;
     color: rgb(128, 128, 128);
-
 }
 
 #raya {
@@ -475,4 +454,317 @@ textarea {
     text-align: end;
     color: rgb(128, 128, 128);
     font-size: 11px;
+}
+
+@media screen and (max-width: 1024px) {
+    main{
+        width: 1024px;
+    }
+    
+    header{
+        width: 100%;
+    }
+
+    header section {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        align-content: space-evenly;
+    }
+
+    section nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .titulo_header nav{
+        justify-items: center;
+    }
+
+    .center_services {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        gap: 1rem;
+    }
+ 
+    .center_services #coffee {
+        width: 200px;
+        grid-row: 1/2;  
+    }
+
+    .center_services #instant {
+        width: 200px; 
+    }
+
+    .center_services #serious {
+        width: 200px;
+    }
+    
+    .center_services #frame {
+        width: 200px;
+    }
+
+    #header_portfolio h1{
+        grid-row: 1/2;
+        width: 30px;
+    }
+
+    #header_portfolio {
+        grid-template-rows: 1fr 1fr;
+        margin-right: 40px;
+    }
+
+    #titu_portfolio {
+        display: grid;
+        grid-column: 1/3;
+        justify-content: center;
+    }
+
+    #links_portfolio {
+        grid-column: 1/3;
+        justify-content: center;
+        grid-row: 2/3;
+    }
+
+    #img_portfolio img{
+        width: 210px;
+        height: 200px;
+    }
+
+    .portfolio {
+        grid-template-rows: 90px 640px;
+    }
+
+    #cont_p_just_default {
+        width: 370px;
+    }
+
+    .just_default{
+        gap: 1rem;
+    }
+
+    #vimeo_video {
+        padding-right: 0px;
+        display: flex;
+        justify-content: start;
+    }
+
+    #vimeo_video img{
+        width: 400px;
+        height: 200;
+    }
+
+    #parr_uno{
+        grid-column: 6/8;
+        grid-row: 2/5;
+        width: 400px;
+    } 
+
+    #textarea {
+        grid-column: 2/6;
+    }
+
+    textarea {
+        width: 854px;
+    }
+
+    #links_footer {
+        grid-column: 2/5;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+
+    main{
+        width: 992px;
+    }
+    
+    header{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+
+    main{
+        width: 700px;
+    }
+    
+    header{
+        width: 100%;
+    }
+
+    .center_services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        gap: 1rem;
+    }
+
+    .titulo_header #titulo_arriba #titulo1{
+        font-size: 17px;
+    }
+
+    .titulo_header #titulo_abajo #titulo2{
+        font-size: 17px;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: 564px 437px 800px 400px 250px 350px 300px 600px 100px;
+    }
+
+    .services {
+        height: 302px;
+        padding-bottom: 135px;
+    }
+
+    .center_services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    #coffee {
+        display: grid;
+        grid-column: 1/2;
+    }
+
+    #img_portfolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    #img_portfolio img {
+        width: 169px;
+        height: 131px;
+    }
+
+    #vimeo_video{
+        display: none;
+    }
+
+    .just_default{
+        grid-template-columns: 1fr;
+    }
+
+    #cont_p_just_default{
+        padding: 67px;
+    }
+
+    textarea {
+        width: 600px;
+    }
+
+    #parr_uno{
+        grid-column: 7/8;
+        width: 300px;
+        font-size: 13px;
+    } 
+
+    input{
+        width: 250px;
+    }
+
+    #links_footer {
+        grid-column: 2/6;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    main{
+        width: 480px;
+    }
+    
+    header{
+        width: 100%;
+    }
+
+    #cont_p_just_default {
+        padding: 45px;
+    }
+
+    .who_jhon {
+        background-image: url(/images/bg_whoIs.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 380px;
+    }
+
+    #cont1_who_jhon hr{
+        margin-bottom: 40px;
+    }
+
+    #cont2_who_jhon {
+        font-size: 12px;
+    }
+
+    #cont2_who_jhon img{
+        /* display: none; */
+        width: 30px;
+    }
+    
+    #espacio_who_jhon {
+        font-size: 12px;
+    }
+
+    #header_testimonials {
+        height: 5px;
+    }
+
+    #link_testimonials a {
+        grid-column: 2/4;
+    }
+
+    #parr_uno{
+        width: 224px;
+    } 
+
+    input{
+        width: 157px;
+    }
+
+    textarea {
+        width: 400px;
+    }
+
+    #links_footer {
+        grid-column: 2/7;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    main{
+        width: 400px;
+    }
+    
+    main {
+        display: grid;
+        grid-template-rows: 550px 650px 900px 400px 250px 350px 300px 600px 100px;
+    }
+
+    .services {
+        height: 300px;
+        padding-bottom: 388px;
+    }
+
+    #links_portfolio a {
+        margin: 0px 0px 0px 30px;
+    }
+
+    .center_services {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
 }
